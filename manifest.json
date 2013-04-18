@@ -1,0 +1,11 @@
+{  
+  "name": "MyTaskList",  
+  "version": "0.9.0",  
+  "description": "Management my everyday's task lists.",  
+  "manifest_version": 2,
+  "browser_action": {  
+    "default_icon": "icon.png" ,
+    "default_title": "My Task List",
+    "default_popup": "popup.html"
+  }  
+} 
