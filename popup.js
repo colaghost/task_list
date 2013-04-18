@@ -26,7 +26,7 @@ window.onload = (function(){
 			//打开添加文本框
 			Tasks.$addItemDiv.addEventListener('click',function(){
 				Tasks.show(Tasks.$addItemInput).hide(Tasks.$addItemDiv);
-				Tasks.show(Tasks.$addItemDate).hide(Tasks.$addItemDiv);
+				Tasks.show(Tasks.$addItemDate);
 				//Tasks.$txtTaskTitle.focus();
 			},true);
 			//回车添加
@@ -51,6 +51,7 @@ window.onload = (function(){
 			//取消
 			Tasks.$txtTaskTitle.addEventListener('blur',function(){
 				Tasks.$txtTaskTitle.value='';
+        Tasks.hide(Tasks.$addItemDate);
 				Tasks.hide(Tasks.$addItemInput).show(Tasks.$addItemDiv);
 			},true);
 			//初始化数据
